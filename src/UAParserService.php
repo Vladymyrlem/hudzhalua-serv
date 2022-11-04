@@ -7,20 +7,25 @@ use donatj\UserAgent\UserAgentParser;
 class UAParserService implements UserAgentServiceInterface
 {
     protected $userAgent;
+    protected $parser;
 
     public function __construct()
     {
-        $this->userAgent = new UserAgentParser();
-        $this->userAgent = $this->userAgent->parse();
+        $this->parser = new UserAgentParser();
+    }
+
+    public function parse($ua)
+    {
+        $this->data = $this->parser->parse($ua);
     }
 
     public function browser(): ?string
     {
-        return $this->userAgent->browser();
+        return $this->data->browser();
     }
 
     public function os(): ?string
     {
-        return $this->userAgent->platform();
+        return $this->data->platform();
     }
 }
