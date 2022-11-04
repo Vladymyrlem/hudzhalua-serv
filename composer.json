@@ -1,0 +1,20 @@
+{
+  "name": "hudzhal/hudzhalua-serv",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "vovan",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Hillel\\User\\": "./src"
+    }
+  },
+  "require": {
+    "hudzhal/hudzhalua-interface": "master-dev"
+  }
+}
