@@ -1,7 +1,7 @@
 {
   "name": "hudzhal/hudzhalua-serv",
   "description": "description",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "proprietary",
   "authors": [
     {
@@ -11,10 +11,11 @@
   ],
   "autoload": {
     "psr-4": {
-      "Hillel\\User\\": "./src"
+      "Hudzhal\\UserAgent\\": "./src"
     }
   },
   "require": {
-    "hudzhal/hudzhalua-interface": "master-dev"
+    "donatj/phpuseragentparser": "^1.7",
+    "hudzhal/hudzhalua-interface": "dev-main"
   }
 }
