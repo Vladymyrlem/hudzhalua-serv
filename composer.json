@@ -16,6 +16,6 @@
   },
   "require": {
     "donatj/phpuseragentparser": "^1.7",
-    "hudzhal/hudzhalua-interface": "dev-main"
+    "hudzhal/hudzhalua-interface": "^1.0"
   }
 }
